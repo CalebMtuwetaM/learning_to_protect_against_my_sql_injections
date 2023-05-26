@@ -42,3 +42,11 @@ else:
     print(f"Success! Here is the information of {name_input}")
     for row in rows:
         print(row)
+
+        
+ """ for you to do the sql injection go to your terminal and run python3 app.py you'll be prompted to input your name 
+ enter a name that is in the database then press enter after that you'll be prompted to input your password there enter " 'OR '1'='1 " and 
+ this will be the injection to prevent it youll change line 34 of the above code and have it as 
+ cursor.execute(f"SELECT * FROM people WHERE name = ? AND password = ?", (name_input, pass_input))
+ this will prevent the injection 
+ 

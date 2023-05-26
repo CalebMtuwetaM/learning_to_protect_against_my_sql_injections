@@ -49,4 +49,4 @@ else:
  this will be the injection to prevent it youll change line 34 of the above code and have it as 
  cursor.execute(f"SELECT * FROM people WHERE name = ? AND password = ?", (name_input, pass_input))
  this will prevent the injection 
- 
+ """
